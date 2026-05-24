@@ -1,0 +1,31 @@
+[project]
+name = "mobile-screenshot-grid-evals"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "pillow>=10",
+]
+
+[project.optional-dependencies]
+opencv = [
+  "numpy>=1.26",
+  "opencv-python>=4.10",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["skills"]
+markers = [
+  "eval: deterministic or live checks for the skill eval harness",
+  "fast: local deterministic tests that do not call a live model",
+  "integration: local integration tests that generate or inspect artifacts",
+  "live: live Codex/model evals; skipped unless RUN_LIVE_EVALS is set",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=9.0.3",
+]

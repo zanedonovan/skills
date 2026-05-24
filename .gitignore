@@ -1,0 +1,36 @@
+.DS_Store
+.venv/
+.uv-cache/
+__pycache__/
+*.pyc
+.pixel-goal/
+
+# Build/test artifacts.
+artifacts/
+**/artifacts/
+**/review_artifacts/
+test/build/
+tests/build/
+**/test/build/
+**/tests/build/
+
+# Local/generated eval output.
+**/evals/codex_exec_answers*.json
+**/evals/grading*.json
+**/evals/benchmark*.json
+**/evals/*_last_message.json
+**/evals/index.html
+**/evals/side_by_side.html
+**/evals/new_cases_side_by_side.html
+**/evals/testing_workflow_report.html
+**/evals/transcripts/
+**/evals/runs/
+**/evals/*/codex_exec_answers*.json
+**/evals/*/grading*.json
+**/evals/*/benchmark*.json
+**/evals/*/*_last_message.json
+**/evals/*/transcripts/
+**/evals/*/runs/
+
+# Temporary exported standalone package, if created manually.
+dist/

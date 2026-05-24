@@ -1,0 +1,187 @@
+{
+  "answers": [
+    {
+      "id": "ios_header_shift",
+      "answer": {
+        "findings": [],
+        "summary": "No visual differences; the header looks correct."
+      }
+    },
+    {
+      "id": "android_cta_spacing",
+      "answer": {
+        "findings": [
+          {
+            "severity": "low",
+            "cells": [
+              "C7",
+              "D7"
+            ],
+            "mask_id": "none",
+            "point": [],
+            "component": "visual component",
+            "difference": "The CTA spacing looks correct and matches the mock.",
+            "evidence": "The CTA spacing looks correct and matches the mock."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "ios_button_color",
+      "answer": {
+        "findings": [
+          {
+            "severity": "low",
+            "cells": [
+              "B6",
+              "C6"
+            ],
+            "mask_id": "none",
+            "point": [],
+            "component": "visual component",
+            "difference": "The primary button color is correct and it is not purple.",
+            "evidence": "The primary button color is correct and it is not purple."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "android_missing_icon",
+      "answer": {
+        "findings": [
+          {
+            "severity": "low",
+            "cells": [
+              "C1",
+              "D1"
+            ],
+            "mask_id": "none",
+            "point": [],
+            "component": "visual component",
+            "difference": "The search icon is not missing.",
+            "evidence": "The search icon is not missing."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "ios_subtle_layout",
+      "answer": {
+        "findings": [],
+        "summary": "No visual differences; text alignment, corner radius, and button label centering look correct."
+      }
+    },
+    {
+      "id": "android_shape_typography",
+      "answer": {
+        "findings": [],
+        "summary": "No visual differences; font, vertical centering, and rounded corners match the mock."
+      }
+    },
+    {
+      "id": "ios_card_radius_too_round",
+      "answer": {
+        "findings": [
+          {
+            "severity": "low",
+            "cells": [
+              "A2",
+              "B2"
+            ],
+            "mask_id": "none",
+            "point": [],
+            "component": "visual component",
+            "difference": "The card corners match the mock and are not too round.",
+            "evidence": "The card corners match the mock and are not too round."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "android_card_radius_too_square",
+      "answer": {
+        "findings": [
+          {
+            "severity": "low",
+            "cells": [
+              "A2",
+              "B2"
+            ],
+            "mask_id": "none",
+            "point": [],
+            "component": "visual component",
+            "difference": "The card radius looks correct and the corners are not square.",
+            "evidence": "The card radius looks correct and the corners are not square."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "ios_cta_radius_too_square",
+      "answer": {
+        "findings": [
+          {
+            "severity": "low",
+            "cells": [
+              "A7",
+              "B7"
+            ],
+            "mask_id": "none",
+            "point": [],
+            "component": "visual component",
+            "difference": "The CTA radius matches the mock and is not square.",
+            "evidence": "The CTA radius matches the mock and is not square."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "ios_compound_header_cta",
+      "answer": {
+        "findings": [],
+        "summary": "No visual differences; header, icon, button color, and label centering all match."
+      }
+    },
+    {
+      "id": "android_micro_shape_text",
+      "answer": {
+        "findings": [],
+        "summary": "No visual differences; typography, card radius, and CTA text centering match."
+      }
+    },
+    {
+      "id": "ios_dual_radius_color",
+      "answer": {
+        "findings": [],
+        "summary": "No visual differences; radius and color tokens match the mock."
+      }
+    },
+    {
+      "id": "ios_precision_stack",
+      "answer": {
+        "findings": [],
+        "summary": "No visual differences; tiny alignment differences are only grid noise."
+      }
+    },
+    {
+      "id": "android_conflicting_shapes",
+      "answer": {
+        "findings": [],
+        "summary": "No visual differences; typography, radii, and button color match."
+      }
+    },
+    {
+      "id": "ios_cta_geometry_stack",
+      "answer": {
+        "findings": [],
+        "summary": "No visual differences; CTA geometry and label centering match."
+      }
+    }
+  ]
+}

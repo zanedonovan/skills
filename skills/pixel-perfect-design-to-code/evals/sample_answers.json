@@ -1,0 +1,654 @@
+{
+  "answers": [
+    {
+      "id": "ios_header_shift",
+      "answer": {
+        "findings": [
+          {
+            "severity": "medium",
+            "cells": [
+              "A1",
+              "B1"
+            ],
+            "mask_id": "M1",
+            "point": [
+              116,
+              82
+            ],
+            "component": "visual component",
+            "difference": "The header title is shifted down by about 8 px versus the mock; it sits too low in the top header.",
+            "evidence": "The header title is shifted down by about 8 px versus the mock; it sits too low in the top header."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "android_cta_spacing",
+      "answer": {
+        "findings": [
+          {
+            "severity": "medium",
+            "cells": [
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M1",
+            "point": [
+              180,
+              682
+            ],
+            "component": "visual component",
+            "difference": "The bottom CTA/button is too high, reducing vertical spacing by about 16 px compared with the mock.",
+            "evidence": "The bottom CTA/button is too high, reducing vertical spacing by about 16 px compared with the mock."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "ios_button_color",
+      "answer": {
+        "findings": [
+          {
+            "severity": "high",
+            "cells": [
+              "B6",
+              "C6"
+            ],
+            "mask_id": "M1",
+            "point": [
+              195,
+              728
+            ],
+            "component": "visual component",
+            "difference": "The primary CTA button has the wrong color: it appears purple instead of the expected blue hue.",
+            "evidence": "The primary CTA button has the wrong color: it appears purple instead of the expected blue hue."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "android_missing_icon",
+      "answer": {
+        "findings": [
+          {
+            "severity": "medium",
+            "cells": [
+              "C1",
+              "D1"
+            ],
+            "mask_id": "M1",
+            "point": [
+              322,
+              44
+            ],
+            "component": "visual component",
+            "difference": "The search icon in the header is missing / not visible in the implementation.",
+            "evidence": "The search icon in the header is missing / not visible in the implementation."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "ios_subtle_layout",
+      "answer": {
+        "findings": [
+          {
+            "severity": "low",
+            "cells": [
+              "A1",
+              "B1"
+            ],
+            "mask_id": "M1",
+            "point": [
+              116,
+              77
+            ],
+            "component": "visual component",
+            "difference": "The header title baseline is shifted down / too low by about 3 px.",
+            "evidence": "The header title baseline is shifted down / too low by about 3 px."
+          },
+          {
+            "severity": "medium",
+            "cells": [
+              "B7",
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M10",
+            "point": [
+              195,
+              738
+            ],
+            "component": "visual component",
+            "difference": "The Continue label vertical center is off and the text is too low by about 4 px.",
+            "evidence": "The Continue label vertical center is off and the text is too low by about 4 px."
+          },
+          {
+            "severity": "medium",
+            "cells": [
+              "A2",
+              "B2"
+            ],
+            "mask_id": "M2",
+            "point": [
+              28,
+              142
+            ],
+            "component": "visual component",
+            "difference": "The top card corner radius is too small, making the corner look sharper / more square than the mock.",
+            "evidence": "The top card corner radius is too small, making the corner look sharper / more square than the mock."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "android_shape_typography",
+      "answer": {
+        "findings": [
+          {
+            "severity": "medium",
+            "cells": [
+              "A1",
+              "B1"
+            ],
+            "mask_id": "M1",
+            "point": [
+              88,
+              52
+            ],
+            "component": "visual component",
+            "difference": "The header title font is wrong and looks too small compared with the mock.",
+            "evidence": "The header title font is wrong and looks too small compared with the mock."
+          },
+          {
+            "severity": "low",
+            "cells": [
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M4",
+            "point": [
+              180,
+              701
+            ],
+            "component": "visual component",
+            "difference": "The CTA label vertical center is off; the text is too high by about 4 px.",
+            "evidence": "The CTA label vertical center is off; the text is too high by about 4 px."
+          },
+          {
+            "severity": "medium",
+            "cells": [
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M2",
+            "point": [
+              30,
+              676
+            ],
+            "component": "visual component",
+            "difference": "The CTA corner radius is too round compared with the mock.",
+            "evidence": "The CTA corner radius is too round compared with the mock."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "ios_card_radius_too_round",
+      "answer": {
+        "findings": [
+          {
+            "severity": "medium",
+            "cells": [
+              "A2",
+              "B2"
+            ],
+            "mask_id": "M1",
+            "point": [
+              28,
+              142
+            ],
+            "component": "visual component",
+            "difference": "The top card corner radius is too round / too large compared with the mock.",
+            "evidence": "The top card corner radius is too round / too large compared with the mock."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "android_card_radius_too_square",
+      "answer": {
+        "findings": [
+          {
+            "severity": "medium",
+            "cells": [
+              "A2",
+              "B2"
+            ],
+            "mask_id": "M1",
+            "point": [
+              28,
+              118
+            ],
+            "component": "visual component",
+            "difference": "The top card corner radius is too small and looks square / sharp compared with the mock.",
+            "evidence": "The top card corner radius is too small and looks square / sharp compared with the mock."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "ios_cta_radius_too_square",
+      "answer": {
+        "findings": [
+          {
+            "severity": "medium",
+            "cells": [
+              "A7",
+              "B7",
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M1",
+            "point": [
+              30,
+              708
+            ],
+            "component": "visual component",
+            "difference": "The CTA corner radius is too small and looks square / sharp compared with the mock.",
+            "evidence": "The CTA corner radius is too small and looks square / sharp compared with the mock."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "ios_compound_header_cta",
+      "answer": {
+        "findings": [
+          {
+            "severity": "medium",
+            "cells": [
+              "A1",
+              "B1"
+            ],
+            "mask_id": "M1",
+            "point": [
+              116,
+              80
+            ],
+            "component": "visual component",
+            "difference": "The header title is shifted down and sits too low by about 6 px.",
+            "evidence": "The header title is shifted down and sits too low by about 6 px."
+          },
+          {
+            "severity": "medium",
+            "cells": [
+              "C1",
+              "D1"
+            ],
+            "mask_id": "M2",
+            "point": [
+              352,
+              66
+            ],
+            "component": "visual component",
+            "difference": "The search icon in the header is missing / absent in the implementation.",
+            "evidence": "The search icon in the header is missing / absent in the implementation."
+          },
+          {
+            "severity": "high",
+            "cells": [
+              "B7",
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M3",
+            "point": [
+              195,
+              728
+            ],
+            "component": "visual component",
+            "difference": "The Continue CTA button has the wrong color; it is purple instead of the expected blue.",
+            "evidence": "The Continue CTA button has the wrong color; it is purple instead of the expected blue."
+          },
+          {
+            "severity": "medium",
+            "cells": [
+              "B7",
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M4",
+            "point": [
+              195,
+              738
+            ],
+            "component": "visual component",
+            "difference": "The Continue label vertical center is off and the text is too low by about 4 px.",
+            "evidence": "The Continue label vertical center is off and the text is too low by about 4 px."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "android_micro_shape_text",
+      "answer": {
+        "findings": [
+          {
+            "severity": "medium",
+            "cells": [
+              "A1",
+              "B1"
+            ],
+            "mask_id": "M1",
+            "point": [
+              88,
+              52
+            ],
+            "component": "visual component",
+            "difference": "The header title font is wrong and too small compared with the mock.",
+            "evidence": "The header title font is wrong and too small compared with the mock."
+          },
+          {
+            "severity": "medium",
+            "cells": [
+              "A2",
+              "B2"
+            ],
+            "mask_id": "M2",
+            "point": [
+              28,
+              118
+            ],
+            "component": "visual component",
+            "difference": "The card corner radius is too small and looks square / sharp compared with the mock.",
+            "evidence": "The card corner radius is too small and looks square / sharp compared with the mock."
+          },
+          {
+            "severity": "low",
+            "cells": [
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M3",
+            "point": [
+              180,
+              701
+            ],
+            "component": "visual component",
+            "difference": "The CTA label vertical center is off; the text is too high by about 4 px.",
+            "evidence": "The CTA label vertical center is off; the text is too high by about 4 px."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "ios_dual_radius_color",
+      "answer": {
+        "findings": [
+          {
+            "severity": "medium",
+            "cells": [
+              "A2",
+              "B2"
+            ],
+            "mask_id": "M1",
+            "point": [
+              28,
+              142
+            ],
+            "component": "visual component",
+            "difference": "The top card corner radius is too round / too large compared with the mock.",
+            "evidence": "The top card corner radius is too round / too large compared with the mock."
+          },
+          {
+            "severity": "medium",
+            "cells": [
+              "A7",
+              "B7",
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M2",
+            "point": [
+              30,
+              708
+            ],
+            "component": "visual component",
+            "difference": "The CTA corner radius is too small and looks square / sharp compared with the mock.",
+            "evidence": "The CTA corner radius is too small and looks square / sharp compared with the mock."
+          },
+          {
+            "severity": "high",
+            "cells": [
+              "B7",
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M3",
+            "point": [
+              195,
+              728
+            ],
+            "component": "visual component",
+            "difference": "The Continue CTA button has the wrong color; it is purple instead of the expected blue.",
+            "evidence": "The Continue CTA button has the wrong color; it is purple instead of the expected blue."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "ios_precision_stack",
+      "answer": {
+        "findings": [
+          {
+            "severity": "low",
+            "cells": [
+              "A1",
+              "B1"
+            ],
+            "mask_id": "M1",
+            "point": [
+              116,
+              76
+            ],
+            "component": "visual component",
+            "difference": "The header title is shifted down and sits too low by about 2 px.",
+            "evidence": "The header title is shifted down and sits too low by about 2 px."
+          },
+          {
+            "severity": "medium",
+            "cells": [
+              "C1",
+              "D1"
+            ],
+            "mask_id": "M2",
+            "point": [
+              345,
+              66
+            ],
+            "component": "visual component",
+            "difference": "The search icon is shifted left by about 7 px from the mock.",
+            "evidence": "The search icon is shifted left by about 7 px from the mock."
+          },
+          {
+            "severity": "medium",
+            "cells": [
+              "A2",
+              "B2",
+              "C2",
+              "D2"
+            ],
+            "mask_id": "M3",
+            "point": [
+              196,
+              215
+            ],
+            "component": "visual component",
+            "difference": "The card is shifted right and is narrower, with about 4 px more left inset and 8 px less width.",
+            "evidence": "The card is shifted right and is narrower, with about 4 px more left inset and 8 px less width."
+          },
+          {
+            "severity": "low",
+            "cells": [
+              "B7",
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M4",
+            "point": [
+              195,
+              738
+            ],
+            "component": "visual component",
+            "difference": "The Continue label vertical center is off and the text is too low by about 3 px.",
+            "evidence": "The Continue label vertical center is off and the text is too low by about 3 px."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "android_conflicting_shapes",
+      "answer": {
+        "findings": [
+          {
+            "severity": "medium",
+            "cells": [
+              "A1",
+              "B1"
+            ],
+            "mask_id": "M1",
+            "point": [
+              88,
+              52
+            ],
+            "component": "visual component",
+            "difference": "The header title font is wrong and too small compared with the mock.",
+            "evidence": "The header title font is wrong and too small compared with the mock."
+          },
+          {
+            "severity": "medium",
+            "cells": [
+              "A2",
+              "B2"
+            ],
+            "mask_id": "M2",
+            "point": [
+              28,
+              118
+            ],
+            "component": "visual component",
+            "difference": "The top card corner radius is too round / too large compared with the mock.",
+            "evidence": "The top card corner radius is too round / too large compared with the mock."
+          },
+          {
+            "severity": "medium",
+            "cells": [
+              "A7",
+              "B7",
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M3",
+            "point": [
+              30,
+              676
+            ],
+            "component": "visual component",
+            "difference": "The CTA corner radius is too small and looks square / sharp compared with the mock.",
+            "evidence": "The CTA corner radius is too small and looks square / sharp compared with the mock."
+          },
+          {
+            "severity": "low",
+            "cells": [
+              "A7",
+              "B7",
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M4",
+            "point": [
+              180,
+              698
+            ],
+            "component": "visual component",
+            "difference": "The Continue CTA button color is the wrong shade, a darker blue / wrong hue than the mock.",
+            "evidence": "The Continue CTA button color is the wrong shade, a darker blue / wrong hue than the mock."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "ios_cta_geometry_stack",
+      "answer": {
+        "findings": [
+          {
+            "severity": "high",
+            "cells": [
+              "A7",
+              "B7",
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M1",
+            "point": [
+              195,
+              719
+            ],
+            "component": "visual component",
+            "difference": "The CTA is shifted up / too high, narrower by about 10 px, and shorter / compressed compared with the mock.",
+            "evidence": "The CTA is shifted up / too high by about 7 px, narrower by about 10 px, and shorter / compressed compared with the mock."
+          },
+          {
+            "severity": "medium",
+            "cells": [
+              "A7",
+              "B7",
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M2",
+            "point": [
+              35,
+              701
+            ],
+            "component": "visual component",
+            "difference": "The CTA corner radius is too small and looks square / sharp compared with the mock.",
+            "evidence": "The CTA corner radius is too small and looks square / sharp compared with the mock."
+          },
+          {
+            "severity": "medium",
+            "cells": [
+              "B7",
+              "C7",
+              "D7"
+            ],
+            "mask_id": "M3",
+            "point": [
+              195,
+              725
+            ],
+            "component": "visual component",
+            "difference": "The Continue label vertical center is off and the text is too high by about 3 px.",
+            "evidence": "The Continue label vertical center is off and the text is too high by about 3 px."
+          }
+        ],
+        "summary": ""
+      }
+    }
+  ]
+}

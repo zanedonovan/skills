@@ -1,0 +1,73 @@
+{
+  "answers": [
+    {
+      "id": "ios_card_radius_too_round",
+      "answer": {
+        "findings": [
+          {
+            "severity": "low",
+            "cells": [
+              "A2",
+              "B2"
+            ],
+            "mask_id": "none",
+            "point": [
+              28,
+              142
+            ],
+            "component": "visual component",
+            "difference": "The top card shape is fine; the corner radius matches the mock and is not too round.",
+            "evidence": "The top card shape is fine; the corner radius matches the mock and is not too round."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "android_card_radius_too_square",
+      "answer": {
+        "findings": [
+          {
+            "severity": "low",
+            "cells": [
+              "A2",
+              "B2"
+            ],
+            "mask_id": "none",
+            "point": [
+              28,
+              118
+            ],
+            "component": "visual component",
+            "difference": "The top card corners look correct; they are not sharp or square.",
+            "evidence": "The top card corners look correct; they are not sharp or square."
+          }
+        ],
+        "summary": ""
+      }
+    },
+    {
+      "id": "ios_cta_radius_too_square",
+      "answer": {
+        "findings": [
+          {
+            "severity": "low",
+            "cells": [
+              "A7",
+              "B7"
+            ],
+            "mask_id": "none",
+            "point": [
+              30,
+              708
+            ],
+            "component": "visual component",
+            "difference": "The CTA corners match the mock and are not square.",
+            "evidence": "The CTA corners match the mock and are not square."
+          }
+        ],
+        "summary": ""
+      }
+    }
+  ]
+}

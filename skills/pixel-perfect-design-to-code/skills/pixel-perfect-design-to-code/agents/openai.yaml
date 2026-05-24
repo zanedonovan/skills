@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pixel Perfect Design To Code"
+  short_description: "Iteratively match implementation screenshots to design"
+  default_prompt: "Use $pixel-perfect-design-to-code /goal to iteratively compare my implementation screenshot to the target design, patch toward pixel-perfect visual match, preserve iteration state, and produce a final HTML report."

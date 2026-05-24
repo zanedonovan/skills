@@ -1,0 +1,1122 @@
+{
+  "cases": [
+    {
+      "id": "ios_header_shift",
+      "platform": "ios",
+      "profile": "ios",
+      "width": 390,
+      "height": 844,
+      "mock_path": "evals/pixel-perfect-design-to-code/fixtures/ios_header_shift_mock.png",
+      "actual_path": "evals/pixel-perfect-design-to-code/fixtures/ios_header_shift_actual.png",
+      "expected_findings": [
+        {
+          "label": "header title y shift",
+          "region_terms": [
+            "A1",
+            "B1",
+            "top",
+            "header",
+            "title"
+          ],
+          "evidence_terms": [
+            "shift",
+            "too low",
+            "down",
+            "8 px",
+            "8px"
+          ],
+          "target": {
+            "box": [
+              58,
+              72,
+              174,
+              90
+            ],
+            "tolerance": 8
+          }
+        }
+      ],
+      "banned_false_alarms": [
+        "missing icon",
+        "color mismatch",
+        "button absent"
+      ],
+      "passing_score": 1.0,
+      "notes": "Title baseline is lower in the implementation."
+    },
+    {
+      "id": "android_cta_spacing",
+      "platform": "android",
+      "profile": "android",
+      "width": 360,
+      "height": 800,
+      "mock_path": "evals/pixel-perfect-design-to-code/fixtures/android_cta_spacing_mock.png",
+      "actual_path": "evals/pixel-perfect-design-to-code/fixtures/android_cta_spacing_actual.png",
+      "expected_findings": [
+        {
+          "label": "cta vertical spacing",
+          "region_terms": [
+            "C7",
+            "D7",
+            "bottom",
+            "button",
+            "cta"
+          ],
+          "evidence_terms": [
+            "too high",
+            "up",
+            "spacing",
+            "16 px",
+            "16px"
+          ],
+          "target": {
+            "point": [
+              180,
+              682
+            ]
+          }
+        }
+      ],
+      "banned_false_alarms": [
+        "wrong color",
+        "missing title"
+      ],
+      "passing_score": 1.0,
+      "notes": "Bottom call-to-action is closer to the content than in the mock."
+    },
+    {
+      "id": "ios_button_color",
+      "platform": "ios",
+      "profile": "ios",
+      "width": 390,
+      "height": 844,
+      "mock_path": "evals/pixel-perfect-design-to-code/fixtures/ios_button_color_mock.png",
+      "actual_path": "evals/pixel-perfect-design-to-code/fixtures/ios_button_color_actual.png",
+      "expected_findings": [
+        {
+          "label": "primary button color",
+          "region_terms": [
+            "A7",
+            "B7",
+            "C7",
+            "D7",
+            "D8",
+            "B6",
+            "C6",
+            "button",
+            "cta",
+            "continue"
+          ],
+          "evidence_terms": [
+            "color",
+            "purple",
+            "wrong hue",
+            "not blue"
+          ],
+          "target": {
+            "box": [
+              24,
+              702,
+              366,
+              754
+            ]
+          }
+        }
+      ],
+      "banned_false_alarms": [
+        "missing button",
+        "position shift"
+      ],
+      "passing_score": 1.0,
+      "notes": "Primary button uses the wrong color token."
+    },
+    {
+      "id": "android_missing_icon",
+      "platform": "android",
+      "profile": "android",
+      "width": 360,
+      "height": 800,
+      "mock_path": "evals/pixel-perfect-design-to-code/fixtures/android_missing_icon_mock.png",
+      "actual_path": "evals/pixel-perfect-design-to-code/fixtures/android_missing_icon_actual.png",
+      "expected_findings": [
+        {
+          "label": "search icon missing",
+          "region_terms": [
+            "C1",
+            "D1",
+            "header",
+            "search",
+            "icon"
+          ],
+          "evidence_terms": [
+            "missing",
+            "absent",
+            "not visible"
+          ],
+          "target": {
+            "point": [
+              322,
+              44
+            ]
+          }
+        }
+      ],
+      "banned_false_alarms": [
+        "wrong spacing",
+        "color mismatch"
+      ],
+      "passing_score": 1.0,
+      "notes": "Search icon is absent from the header."
+    },
+    {
+      "id": "ios_subtle_layout",
+      "platform": "ios",
+      "profile": "ios",
+      "width": 390,
+      "height": 844,
+      "mock_path": "evals/pixel-perfect-design-to-code/fixtures/ios_subtle_layout_mock.png",
+      "actual_path": "evals/pixel-perfect-design-to-code/fixtures/ios_subtle_layout_actual.png",
+      "expected_findings": [
+        {
+          "label": "header title baseline",
+          "region_terms": [
+            "A1",
+            "B1",
+            "top",
+            "header",
+            "title"
+          ],
+          "evidence_terms": [
+            "baseline",
+            "shift",
+            "down",
+            "too low",
+            "3 px",
+            "3px"
+          ],
+          "target": {
+            "box": [
+              58,
+              72,
+              174,
+              82
+            ]
+          }
+        },
+        {
+          "label": "button label vertical centering",
+          "region_terms": [
+            "B7",
+            "C7",
+            "D7",
+            "button",
+            "cta",
+            "continue"
+          ],
+          "evidence_terms": [
+            "vertical center",
+            "off center",
+            "text too low",
+            "down",
+            "4 px",
+            "4px"
+          ],
+          "target": {
+            "point": [
+              195,
+              738
+            ],
+            "tolerance": 8
+          }
+        },
+        {
+          "label": "card corner radius",
+          "region_terms": [
+            "A2",
+            "B2",
+            "card",
+            "corner",
+            "radius"
+          ],
+          "evidence_terms": [
+            "radius",
+            "sharp",
+            "square",
+            "too small",
+            "corner"
+          ],
+          "target": {
+            "point": [
+              28,
+              142
+            ],
+            "tolerance": 10
+          }
+        }
+      ],
+      "banned_false_alarms": [
+        "missing icon",
+        "color mismatch"
+      ],
+      "passing_score": 1.0,
+      "notes": "Subtle typography and shape regressions."
+    },
+    {
+      "id": "android_shape_typography",
+      "platform": "android",
+      "profile": "android",
+      "width": 360,
+      "height": 800,
+      "mock_path": "evals/pixel-perfect-design-to-code/fixtures/android_shape_typography_mock.png",
+      "actual_path": "evals/pixel-perfect-design-to-code/fixtures/android_shape_typography_actual.png",
+      "expected_findings": [
+        {
+          "label": "header title font mismatch",
+          "region_terms": [
+            "A1",
+            "B1",
+            "header",
+            "title",
+            "font"
+          ],
+          "evidence_terms": [
+            "font",
+            "wrong typeface",
+            "wrong size",
+            "too small"
+          ],
+          "target": {
+            "box": [
+              32,
+              36,
+              160,
+              60
+            ]
+          }
+        },
+        {
+          "label": "button label vertical centering",
+          "region_terms": [
+            "C7",
+            "D7",
+            "button",
+            "cta",
+            "continue"
+          ],
+          "evidence_terms": [
+            "vertical center",
+            "off center",
+            "text too high",
+            "up",
+            "4 px",
+            "4px"
+          ],
+          "target": {
+            "point": [
+              180,
+              701
+            ],
+            "tolerance": 8
+          }
+        },
+        {
+          "label": "cta corner radius",
+          "region_terms": [
+            "C7",
+            "D7",
+            "button",
+            "cta",
+            "corner",
+            "radius"
+          ],
+          "evidence_terms": [
+            "radius",
+            "rounded",
+            "too round",
+            "corner"
+          ],
+          "target": {
+            "point": [
+              30,
+              676
+            ],
+            "tolerance": 10
+          }
+        }
+      ],
+      "banned_false_alarms": [
+        "missing icon",
+        "color mismatch"
+      ],
+      "passing_score": 1.0,
+      "notes": "Subtle font and rounded-corner regressions."
+    },
+    {
+      "id": "ios_card_radius_too_round",
+      "platform": "ios",
+      "profile": "ios",
+      "width": 390,
+      "height": 844,
+      "mock_path": "evals/pixel-perfect-design-to-code/fixtures/ios_card_radius_too_round_mock.png",
+      "actual_path": "evals/pixel-perfect-design-to-code/fixtures/ios_card_radius_too_round_actual.png",
+      "expected_findings": [
+        {
+          "label": "card corner radius too round",
+          "region_terms": [
+            "A2",
+            "B2",
+            "card",
+            "corner",
+            "radius"
+          ],
+          "evidence_terms": [
+            "radius",
+            "rounded",
+            "too round",
+            "too large",
+            "corner"
+          ],
+          "target": {
+            "point": [
+              28,
+              142
+            ],
+            "tolerance": 10
+          }
+        }
+      ],
+      "banned_false_alarms": [
+        "missing icon",
+        "color mismatch",
+        "position shift"
+      ],
+      "passing_score": 1.0,
+      "notes": "Top card uses an overly large corner radius."
+    },
+    {
+      "id": "android_card_radius_too_square",
+      "platform": "android",
+      "profile": "android",
+      "width": 360,
+      "height": 800,
+      "mock_path": "evals/pixel-perfect-design-to-code/fixtures/android_card_radius_too_square_mock.png",
+      "actual_path": "evals/pixel-perfect-design-to-code/fixtures/android_card_radius_too_square_actual.png",
+      "expected_findings": [
+        {
+          "label": "card corner radius too square",
+          "region_terms": [
+            "A2",
+            "B2",
+            "card",
+            "corner",
+            "radius"
+          ],
+          "evidence_terms": [
+            "radius",
+            "sharp",
+            "square",
+            "too small",
+            "corner"
+          ],
+          "target": {
+            "point": [
+              28,
+              118
+            ],
+            "tolerance": 10
+          }
+        }
+      ],
+      "banned_false_alarms": [
+        "missing icon",
+        "color mismatch",
+        "position shift"
+      ],
+      "passing_score": 1.0,
+      "notes": "Top card lost its rounded corners."
+    },
+    {
+      "id": "ios_cta_radius_too_square",
+      "platform": "ios",
+      "profile": "ios",
+      "width": 390,
+      "height": 844,
+      "mock_path": "evals/pixel-perfect-design-to-code/fixtures/ios_cta_radius_too_square_mock.png",
+      "actual_path": "evals/pixel-perfect-design-to-code/fixtures/ios_cta_radius_too_square_actual.png",
+      "expected_findings": [
+        {
+          "label": "cta corner radius too square",
+          "region_terms": [
+            "A7",
+            "B7",
+            "C7",
+            "D7",
+            "button",
+            "cta",
+            "corner",
+            "radius"
+          ],
+          "evidence_terms": [
+            "radius",
+            "sharp",
+            "square",
+            "too small",
+            "corner"
+          ],
+          "target": {
+            "point": [
+              30,
+              708
+            ],
+            "tolerance": 10
+          }
+        }
+      ],
+      "banned_false_alarms": [
+        "missing icon",
+        "color mismatch",
+        "position shift"
+      ],
+      "passing_score": 1.0,
+      "notes": "Primary CTA lost its rounded corners."
+    },
+    {
+      "id": "ios_compound_header_cta",
+      "platform": "ios",
+      "profile": "ios",
+      "width": 390,
+      "height": 844,
+      "mock_path": "evals/pixel-perfect-design-to-code/fixtures/ios_compound_header_cta_mock.png",
+      "actual_path": "evals/pixel-perfect-design-to-code/fixtures/ios_compound_header_cta_actual.png",
+      "expected_findings": [
+        {
+          "label": "header title medium y shift",
+          "region_terms": [
+            "A1",
+            "B1",
+            "top",
+            "header",
+            "title"
+          ],
+          "evidence_terms": [
+            "shift",
+            "down",
+            "too low",
+            "6 px",
+            "6px"
+          ],
+          "target": {
+            "box": [
+              58,
+              72,
+              174,
+              88
+            ]
+          }
+        },
+        {
+          "label": "search icon missing in compound header",
+          "region_terms": [
+            "C1",
+            "D1",
+            "header",
+            "search",
+            "icon"
+          ],
+          "evidence_terms": [
+            "missing",
+            "absent",
+            "not visible"
+          ],
+          "target": {
+            "point": [
+              352,
+              66
+            ],
+            "tolerance": 24
+          }
+        },
+        {
+          "label": "compound cta button color",
+          "region_terms": [
+            "A7",
+            "B7",
+            "C7",
+            "D7",
+            "button",
+            "cta",
+            "continue"
+          ],
+          "evidence_terms": [
+            "color",
+            "purple",
+            "wrong hue",
+            "not blue"
+          ],
+          "target": {
+            "box": [
+              24,
+              702,
+              366,
+              754
+            ]
+          }
+        },
+        {
+          "label": "compound cta label vertical centering",
+          "region_terms": [
+            "B7",
+            "C7",
+            "D7",
+            "button",
+            "cta",
+            "continue"
+          ],
+          "evidence_terms": [
+            "vertical center",
+            "off center",
+            "text too low",
+            "down",
+            "4 px",
+            "4px"
+          ],
+          "target": {
+            "point": [
+              195,
+              738
+            ],
+            "tolerance": 8
+          }
+        }
+      ],
+      "banned_false_alarms": [
+        "card radius",
+        "missing button",
+        "font mismatch"
+      ],
+      "passing_score": 1.0,
+      "notes": "Compound iOS case mixes header, icon, color, and label-centering defects."
+    },
+    {
+      "id": "android_micro_shape_text",
+      "platform": "android",
+      "profile": "android",
+      "width": 360,
+      "height": 800,
+      "mock_path": "evals/pixel-perfect-design-to-code/fixtures/android_micro_shape_text_mock.png",
+      "actual_path": "evals/pixel-perfect-design-to-code/fixtures/android_micro_shape_text_actual.png",
+      "expected_findings": [
+        {
+          "label": "android micro header typography",
+          "region_terms": [
+            "A1",
+            "B1",
+            "header",
+            "title",
+            "font"
+          ],
+          "evidence_terms": [
+            "font",
+            "wrong typeface",
+            "wrong size",
+            "too small"
+          ],
+          "target": {
+            "box": [
+              32,
+              36,
+              160,
+              60
+            ]
+          }
+        },
+        {
+          "label": "android micro card radius",
+          "region_terms": [
+            "A2",
+            "B2",
+            "card",
+            "corner",
+            "radius"
+          ],
+          "evidence_terms": [
+            "radius",
+            "sharp",
+            "square",
+            "too small",
+            "corner"
+          ],
+          "target": {
+            "point": [
+              28,
+              118
+            ],
+            "tolerance": 10
+          }
+        },
+        {
+          "label": "android micro cta label centering",
+          "region_terms": [
+            "C7",
+            "D7",
+            "button",
+            "cta",
+            "continue"
+          ],
+          "evidence_terms": [
+            "vertical center",
+            "off center",
+            "text too high",
+            "up",
+            "4 px",
+            "4px"
+          ],
+          "target": {
+            "point": [
+              180,
+              701
+            ],
+            "tolerance": 8
+          }
+        }
+      ],
+      "banned_false_alarms": [
+        "missing icon",
+        "wrong color",
+        "button absent"
+      ],
+      "passing_score": 1.0,
+      "notes": "Dense Android case combines typography, shape, and text baseline defects."
+    },
+    {
+      "id": "ios_dual_radius_color",
+      "platform": "ios",
+      "profile": "ios",
+      "width": 390,
+      "height": 844,
+      "mock_path": "evals/pixel-perfect-design-to-code/fixtures/ios_dual_radius_color_mock.png",
+      "actual_path": "evals/pixel-perfect-design-to-code/fixtures/ios_dual_radius_color_actual.png",
+      "expected_findings": [
+        {
+          "label": "dual card radius too round",
+          "region_terms": [
+            "A2",
+            "B2",
+            "card",
+            "corner",
+            "radius"
+          ],
+          "evidence_terms": [
+            "radius",
+            "rounded",
+            "too round",
+            "too large",
+            "corner"
+          ],
+          "target": {
+            "point": [
+              28,
+              142
+            ],
+            "tolerance": 10
+          }
+        },
+        {
+          "label": "dual cta radius too square",
+          "region_terms": [
+            "A7",
+            "B7",
+            "C7",
+            "D7",
+            "button",
+            "cta",
+            "corner",
+            "radius"
+          ],
+          "evidence_terms": [
+            "radius",
+            "sharp",
+            "square",
+            "too small",
+            "corner"
+          ],
+          "target": {
+            "point": [
+              30,
+              708
+            ],
+            "tolerance": 10
+          }
+        },
+        {
+          "label": "dual cta color",
+          "region_terms": [
+            "A7",
+            "B7",
+            "C7",
+            "D7",
+            "button",
+            "cta",
+            "continue"
+          ],
+          "evidence_terms": [
+            "color",
+            "purple",
+            "wrong hue",
+            "not blue"
+          ],
+          "target": {
+            "box": [
+              24,
+              702,
+              366,
+              754
+            ]
+          }
+        }
+      ],
+      "banned_false_alarms": [
+        "missing icon",
+        "title shift",
+        "missing button"
+      ],
+      "passing_score": 1.0,
+      "notes": "iOS case requires separating card radius, CTA radius, and CTA color."
+    },
+    {
+      "id": "ios_precision_stack",
+      "platform": "ios",
+      "profile": "ios",
+      "width": 390,
+      "height": 844,
+      "mock_path": "evals/pixel-perfect-design-to-code/fixtures/ios_precision_stack_mock.png",
+      "actual_path": "evals/pixel-perfect-design-to-code/fixtures/ios_precision_stack_actual.png",
+      "expected_findings": [
+        {
+          "label": "precision header title tiny y shift",
+          "region_terms": [
+            "A1",
+            "B1",
+            "header",
+            "title"
+          ],
+          "evidence_terms": [
+            "shifted",
+            "too low",
+            "down",
+            "2 px",
+            "2px"
+          ],
+          "target": {
+            "point": [
+              116,
+              76
+            ],
+            "tolerance": 5
+          }
+        },
+        {
+          "label": "precision search icon left shift",
+          "region_terms": [
+            "C1",
+            "D1",
+            "header",
+            "search",
+            "icon"
+          ],
+          "evidence_terms": [
+            "shifted",
+            "left",
+            "7 px",
+            "7px"
+          ],
+          "target": {
+            "point": [
+              345,
+              66
+            ],
+            "tolerance": 8
+          }
+        },
+        {
+          "label": "precision card inset width drift",
+          "region_terms": [
+            "A2",
+            "B2",
+            "C2",
+            "D2",
+            "card"
+          ],
+          "evidence_terms": [
+            "shifted right",
+            "narrower",
+            "inset",
+            "4 px",
+            "8 px",
+            "8px"
+          ],
+          "target": {
+            "box": [
+              24,
+              138,
+              366,
+              292
+            ]
+          }
+        },
+        {
+          "label": "precision cta label tiny centering",
+          "region_terms": [
+            "B7",
+            "C7",
+            "D7",
+            "button",
+            "cta",
+            "continue"
+          ],
+          "evidence_terms": [
+            "vertical center",
+            "off center",
+            "text too low",
+            "down",
+            "3 px",
+            "3px"
+          ],
+          "target": {
+            "point": [
+              195,
+              738
+            ],
+            "tolerance": 6
+          }
+        }
+      ],
+      "banned_false_alarms": [
+        "missing icon",
+        "wrong color",
+        "radius"
+      ],
+      "passing_score": 1.0,
+      "notes": "Hard iOS case with tiny 2-8 px alignment defects that should not be waved away as grid noise."
+    },
+    {
+      "id": "android_conflicting_shapes",
+      "platform": "android",
+      "profile": "android",
+      "width": 360,
+      "height": 800,
+      "mock_path": "evals/pixel-perfect-design-to-code/fixtures/android_conflicting_shapes_mock.png",
+      "actual_path": "evals/pixel-perfect-design-to-code/fixtures/android_conflicting_shapes_actual.png",
+      "expected_findings": [
+        {
+          "label": "conflicting header typography",
+          "region_terms": [
+            "A1",
+            "B1",
+            "header",
+            "title",
+            "font"
+          ],
+          "evidence_terms": [
+            "font",
+            "wrong typeface",
+            "wrong size",
+            "too small"
+          ],
+          "target": {
+            "box": [
+              32,
+              36,
+              160,
+              60
+            ]
+          }
+        },
+        {
+          "label": "conflicting card radius too round",
+          "region_terms": [
+            "A2",
+            "B2",
+            "card",
+            "corner",
+            "radius"
+          ],
+          "evidence_terms": [
+            "radius",
+            "rounded",
+            "too round",
+            "too large",
+            "corner"
+          ],
+          "target": {
+            "point": [
+              28,
+              118
+            ],
+            "tolerance": 10
+          }
+        },
+        {
+          "label": "conflicting cta radius too square",
+          "region_terms": [
+            "A7",
+            "B7",
+            "C7",
+            "D7",
+            "button",
+            "cta",
+            "corner",
+            "radius"
+          ],
+          "evidence_terms": [
+            "radius",
+            "sharp",
+            "square",
+            "too small",
+            "corner"
+          ],
+          "target": {
+            "point": [
+              30,
+              676
+            ],
+            "tolerance": 10
+          }
+        },
+        {
+          "label": "conflicting cta color shade",
+          "region_terms": [
+            "A7",
+            "B7",
+            "C7",
+            "D7",
+            "button",
+            "cta",
+            "continue"
+          ],
+          "evidence_terms": [
+            "color",
+            "wrong shade",
+            "darker blue",
+            "wrong hue"
+          ],
+          "target": {
+            "box": [
+              24,
+              672,
+              336,
+              724
+            ]
+          }
+        }
+      ],
+      "banned_false_alarms": [
+        "missing icon",
+        "button absent",
+        "title shift"
+      ],
+      "passing_score": 1.0,
+      "notes": "Hard Android case has opposite shape failures: card too round while CTA is too square, plus subtle blue shade drift."
+    },
+    {
+      "id": "ios_cta_geometry_stack",
+      "platform": "ios",
+      "profile": "ios",
+      "width": 390,
+      "height": 844,
+      "mock_path": "evals/pixel-perfect-design-to-code/fixtures/ios_cta_geometry_stack_mock.png",
+      "actual_path": "evals/pixel-perfect-design-to-code/fixtures/ios_cta_geometry_stack_actual.png",
+      "expected_findings": [
+        {
+          "label": "cta geometry shifted and compressed",
+          "region_terms": [
+            "A7",
+            "B7",
+            "C7",
+            "D7",
+            "button",
+            "cta",
+            "continue"
+          ],
+          "evidence_terms": [
+            "shifted up",
+            "too high",
+            "narrower",
+            "shorter",
+            "compressed",
+            "7 px",
+            "10 px"
+          ],
+          "target": {
+            "box": [
+              29,
+              695,
+              361,
+              743
+            ]
+          }
+        },
+        {
+          "label": "cta geometry radius too square",
+          "region_terms": [
+            "A7",
+            "B7",
+            "C7",
+            "D7",
+            "button",
+            "cta",
+            "corner",
+            "radius"
+          ],
+          "evidence_terms": [
+            "radius",
+            "sharp",
+            "square",
+            "too small",
+            "corner"
+          ],
+          "target": {
+            "point": [
+              35,
+              701
+            ],
+            "tolerance": 10
+          }
+        },
+        {
+          "label": "cta geometry label too high",
+          "region_terms": [
+            "B7",
+            "C7",
+            "D7",
+            "button",
+            "cta",
+            "continue"
+          ],
+          "evidence_terms": [
+            "vertical center",
+            "off center",
+            "text too high",
+            "up",
+            "3 px",
+            "3px"
+          ],
+          "target": {
+            "point": [
+              195,
+              725
+            ],
+            "tolerance": 7
+          }
+        }
+      ],
+      "banned_false_alarms": [
+        "missing icon",
+        "wrong color",
+        "title shift"
+      ],
+      "passing_score": 1.0,
+      "notes": "Hard iOS CTA case stacks y-position, width, height, radius, and label-baseline defects in one component."
+    }
+  ]
+}
